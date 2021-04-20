@@ -30,7 +30,7 @@ För att skapa en knapp som skulle visas på första sidan när man öppnar appe
 ```
 
 ## Knappens utseende
-![](knapp.png)
+![](Knapp.png)
 ## Få activity_main som första sida
 På grund av att knappen implementerades på activity_main.xml behövs det i filen **androidManifest.xml** ändras ordning på aktiviteterna. **Activitymain** lades därför före **second_activity** på grund av att activitymain är den sidan som ska visas först och second_activity är den sidan som användaren ska komma till när den klickar på knappen.
 
