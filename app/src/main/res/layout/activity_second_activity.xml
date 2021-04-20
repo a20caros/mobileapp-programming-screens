@@ -11,12 +11,11 @@
         android:name="com.example.screens.Blank_fragment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:tag="blank_fragment"
+        android:tag="fragment_blank_fragment"
         android:layout_marginTop="50dp">
 
 
         <ImageView
-            android:id="@+id/imageView3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:srcCompat="@drawable/blomma"
