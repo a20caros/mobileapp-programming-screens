@@ -32,7 +32,7 @@ För att skapa en knapp som skulle visas på första sidan när man öppnar appe
 ## Knappens utseende
 ![](Knapp.png)
 ## Få activity_main som första sida
-På grund av att knappen implementerades på activity_main.xml behövs det i filen **androidManifest.xml** ändras ordning på aktiviteterna. **Activitymain** lades därför före **second_activity** på grund av att activitymain är den sidan som ska visas först och second_activity är den sidan som användaren ska komma till när den klickar på knappen.
+På grund av att knappen implementerades på activity_main.xml behövs det i filen **androidManifest.xml** läggas till filen **MainActivity** som en aktivitet tillsammans med ett intent filter. Anledningen till varför filen ska ha ett intent filter är för att det är den som startas när appen öppnas. Aktiviteten Second_activity lades också in men enbart som en aktivitet.
 
 ```
     <activity android:name=".MainActivity">
@@ -43,11 +43,6 @@ På grund av att knappen implementerades på activity_main.xml behövs det i fil
     </intent-filter>
     </activity>
     <activity android:name=".Second_activity">
-    <intent-filter>
-        <action android:name="android.intent.action.MAIN" />
-
-        <category android:name="android.intent.category.LAUNCHER" />
-    </intent-filter>
     </activity>
 ```
 
